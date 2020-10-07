@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin</title>
+        <meta charset="en-us">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        body
+        {
+            background-color: black;
+            margin: 0;
+        }
+    </style>
+    <body>
+        <section class="cardstyle container" style="background-color: #fffaf069;border-radius: 9px;color:floralwhite">
+            <div class="container">
+                <div class="cardlogo" style="background-color:#b89189">
+                     <img src="images/adminlogo.jpg" width="200" height="250" alt="logo">
+                    <h4>Login</h4>
+                </div>
+                <div class="cardform">
+                    <form action="/Admin.php" method="post" id="myform" >
+                        <label for="username">Name</label>
+                        <input type="text" class="form-control" name="username" placeholder="Enter Your Name" required>
+                        <output id="output"></output><br>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" required placeholder="Enter Your Password"><br>
+                        <output id="output1"></output><br>
+                       <button type="submit" class="btn btn-primary form-control"><span class="fa fa-sign-in"> Login</span></button><br>
+                    </form>
+                </div>
+                <hr>
+                <div class="cardfooter">
+                   <a style="text-decoration:none;" href="mailto:kannansang246@gmail.com?subject=forgetRollno&body=15"class="text-white"><b>Forget password<span class="fa fa-question"></span></b></a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
